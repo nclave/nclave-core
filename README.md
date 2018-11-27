@@ -6,7 +6,7 @@ cross-language by default. While the core is written in Rust, Nclave was
 designed for cross compatibility.
 
 More information can be found in the docs directory and 
-[here](https://nclave.io/docs/en/v0.0.1/)
+[here](https://nclave.io/docs/en/v0.0.1/).
 
 # Motivation
 
@@ -18,7 +18,7 @@ API
 
 Nclave has native support for plugins through dynamic loading. Many common and 
 useful plugins have been created for reuse in any project. More infomation can
-be found [here](https://nclave.io/docs/en/v0.0.1/plugins/list.html)
+be found [here](https://nclave.io/docs/en/v0.0.1/plugins/list.html).
 
 # Installing
 
@@ -35,16 +35,16 @@ files needed for functionality of the application. Also the config file
 nclave.conf will be created for configuring Nclave.
 
 After that, it is as simple as including or importing the respective header into 
-your code and calling the Nclave API
+your code and calling the Nclave API.
 
 A more indepth tutorial on getting started can be found 
-[here](https://nclave.io/docs/en/v0.0.1/getting-started/)
+[here](https://nclave.io/docs/en/v0.0.1/getting-started/).
 
 # Contributing
 
-To contribute to Nclave see CONTRIBUTING
+To contribute to Nclave see CONTRIBUTING.
 
 # License
 
-Nclave is licensed in GPLv2. For more information see LICENSE.A
+Nclave is licensed in GPLv2. For more information see LICENSE.
 
