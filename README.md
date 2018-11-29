@@ -3,7 +3,12 @@
 Nclave is a network micro-framework that helps one develop safe and secure 
 network applications quicker with less work. Nclave is cross-platform and 
 cross-language by default. While the core is written in Rust, Nclave was 
-designed for cross compatibility.
+designed for cross compatibility. 
+
+Nclave is non blocking by default and completley asynchronous. This allows for
+management of many connections on less resources than conventional network
+libraries. Nclave is designed for applications that have many concurrenct 
+connections, require low latency with minimal overhead. 
 
 More information can be found in the docs directory and 
 [here](https://nclave.io/docs/en/v0.0.1/).
@@ -18,7 +23,7 @@ API
 
 Nclave has native support for plugins through dynamic loading. Many common and 
 useful plugins have been created for reuse in any project. More infomation can
-be found [here](https://nclave.io/docs/en/v0.0.1/plugins/list.html).
+be found [here](https://nclave.io/plugins/).
 
 # Installing
 

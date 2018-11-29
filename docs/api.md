@@ -2,26 +2,28 @@
 
 This is a general reference for the Nclave API. 
 
-# Introduction
-
-To first understand the Nclave API, one has to understand the architecture of 
-the framework. 
-
-# Jargon
-
-Some technical jargon with Nclave:
+# Jargon:
 
 ### Core
 
-Nclave without any additional plugins or 
+Nclave without any aditional plugins or application logic. This includes the 
+channel manager and the corresponding channels. The Nclave core can be built as
+a client or a server.
 
 ### Channel
 
-A linked list of handlers that the data passes through.
+An array of handlers that the buffer passes through. At the end of each channel
+there is an outboundcap handler and an inboundcap handler. 
+
+The outboundcap handler transmittes the buffer to the specified host.
+
+The inboundcap handler assignes the data of the buffer to a variable for
+later use in the application.
 
 ### Connection
 
-A connection from two Internet connected devices
+A connection from two Internet connected devices. A connection is analgous to 
+an open socket connection between two devices. 
 
 ### Handler
 
@@ -30,19 +32,16 @@ to the app.
 
 ### App
 
-The rest of the code in your network application 
+The rest of the code in your network application. 
 
-### Data 
+### Buffer
 
-The information sent over the Internet.
+A fast and highly preformant data structure used to handle large amounts of 
+binary data.
 
 ### Plugins
 
-Third party dynamically loaded handlers.
-
-
-# The Nclave channel
-
-The logic of your app will be defined outside of Nclave. Nclave defines the 
-channels for the network stack of your application. A channel is a list of 
-handlers that can mutate the data that is passed through them. 
+Third party dynamically loaded handlers or channels. Nclave comes with a few 
+standard plugins to help you get started. Though many can be found
+online. An index of popular plugins can be found 
+[here](https://nclave.io/plugins/).
