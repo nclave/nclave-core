@@ -1,6 +1,6 @@
-# Nclave - Modern and useful network micro-framework
+# Nclave - Modern and useful network framework
 
-Nclave is a network micro-framework that helps one develop safe and secure 
+Nclave is a network framework that helps one develop safe and secure 
 network applications quicker with less work. Nclave is cross-platform and 
 cross-language by default. While the core is written in Rust, Nclave was 
 designed for cross compatibility. 
@@ -17,7 +17,11 @@ More information can be found in the docs directory and
 
 The motivation for Nclave is the state of network programming as of 2018.
 Besides some outliers, network programming is dominated by the Berkley Sockets
-API 
+API. Many applications that communicate over the Internet communicate over HTTP
+which leads to byzantine protocols such as websockets. 
+
+Nclave intends to be a framework that is made for humans who want to write fast,
+secure, and clean network applications without sacrificing time and resources.
 
 # Plugins
 
@@ -52,4 +56,3 @@ To contribute to Nclave see CONTRIBUTING.
 # License
 
 Nclave is licensed in GPLv2. For more information see LICENSE.
-

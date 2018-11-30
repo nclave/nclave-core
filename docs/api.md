@@ -30,6 +30,11 @@ an open socket connection between two devices.
 Functions that take in data, mutate it and pass it down to the next handler or
 to the app.
 
+### Bootstrap
+
+Bootstrap is the function that is called to initalize the channels. Read and
+Write methods can be called from the channels and are already defined. 
+
 ### App
 
 The rest of the code in your network application. 
