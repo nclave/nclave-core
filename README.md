@@ -36,7 +36,7 @@ To install Nclave into your project, install the
 the project. 
 
 ```bash 
-$ ncm init project_name
+$ ncl init project_name
 ```
 
 From there the nclave directory will be created and will have the object 
